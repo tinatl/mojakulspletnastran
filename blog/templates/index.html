@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block "vsebina" %}
+<div id="header-featured"> </div>
+<div id="wrapper">
+  <div id="featured-wrapper">
+    <div id="featured" class="container">
+      <div class="column1"> <span class="icon icon-cogs"></span>
+        <div class="title">
+          <h2>Naslov 1</h2>
+        </div>
+        <p>Ne vem, kaj naj napišem.</p>
+      </div>
+      <div class="column2"> <span class="icon icon-legal"></span>
+        <div class="title">
+          <h2>Naslov 2</h2>
+        </div>
+        <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Pellentesque viverra vulputate enim. Aliquam erat volutpat.</p>
+      </div>
+      <div class="column3"> <span class="icon icon-unlock"></span>
+        <div class="title">
+          <h2>Naslov 3</h2>
+        </div>
+        <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Pellentesque viverra vulputate enim. Aliquam erat volutpat.</p>
+      </div>
+      <div class="column4"> <span class="icon icon-wrench"></span>
+        <div class="title">
+          <h2>Naslov 4</h2>
+        </div>
+        <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Pellentesque viverra vulputate enim. Aliquam erat volutpat.</p>
+      </div>
+     </div>
+    
+    {% for stran in strani %}
+    <div id="extra" class="container">
+    <h2>{{ stran.title }}</h2>
+    <span>ful obvladam kao :) :)</span> 
+    <p>Vsebina spletne strani :) </p>
+
+    <a href="#" class="button">Na stran</a> </div>
+    </div>
+    
+    {% endfor %}
+    </div>
+   </div>
+  
+  
+{% endblock %}
