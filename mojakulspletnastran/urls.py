@@ -7,6 +7,6 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
     url(r"prva.html",'blog.views.prva_stran'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r"talepsa.html",'blog.views.talepsa'),
+    url(r"",'blog.views.talepsa'),
     
 ]
